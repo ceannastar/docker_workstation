@@ -85,4 +85,8 @@ wait $SESMAN_PID $XRDP_PID\n' > /start.sh && chmod +x /start.sh
 
 EXPOSE 3389
 
+RUN sudo apt-get update && apt-get install -y \ 
+    nodejs \
+    npm
+
 CMD ["/start.sh"]

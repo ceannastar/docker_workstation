@@ -1,6 +1,6 @@
 @echo off
 for /f "tokens=1" %%i in ('wsl hostname -I') do set IP=%%i
-
+echo %IP%
 (
 echo full address:s:%IP%
 echo username:s:workstation
